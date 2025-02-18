@@ -1,0 +1,19 @@
+{
+    "name": "Nova",
+    "version": "1.0",
+    "description": "A powerful model by Nexiloop",
+    "files": [
+      {
+        "name": "model_weights",
+        "path": "model_weights.bin"
+      },
+      {
+        "name": "config",
+        "path": "config.json"
+      },
+      {
+        "name": "tokenizer",
+        "path": "tokenizer.json"
+      }
+    ]
+}
