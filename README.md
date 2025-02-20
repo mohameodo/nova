@@ -27,6 +27,7 @@ The **Nexiloop Nova** model is a fine-tuned version of the Llama 2 architecture,
 - **Optimized for Compact Systems:** Nexiloop Nova is designed for applications where memory and computation are limited.
 - **Pretraining:** The model has been pre-trained on the **SlimPajama-627B** dataset and further fine-tuned for conversational abilities.
 - **Multiple Deployment Options:** Available on **Hugging Face** and can also be used with **Ollama** for local execution.
+- **Cross-Platform Compatibility:** Works on **Windows, macOS, and Linux** with simple installation steps.
 
 ### **Training Overview:**
 We adopted the same architecture and tokenizer as **Llama 2**, ensuring compatibility with many existing open-source projects. Training started on **2025-02-20**, utilizing **16 A100-40G GPUs** for maximum efficiency.
@@ -47,6 +48,12 @@ You can easily try out our model for free using **Ollama**:
 #### **Quick Install and Run**
 Run the following command in your terminal to install **Ollama**, download the **Nova** model, and start chatting—all in one step:
 
+##### **Windows (PowerShell):**
+```powershell
+Invoke-WebRequest -Uri "https://ollama.com/install.ps1" -OutFile "install.ps1"; .\install.ps1; ollama pull Mohamedo/nova; ollama run Mohamedo/nova
+```
+
+##### **macOS/Linux:**
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh && ollama pull Mohamedo/nova && ollama run Mohamedo/nova
 ```
@@ -86,4 +93,17 @@ print(outputs[0]["generated_text"])
 ```
 
 Now you're ready to integrate **Nexiloop Nova** into your applications!
+
+---
+### **Upcoming Features & Roadmap**
+🚀 **Better Model Coming Soon!** We're working on:
+- **Nova 2.0** with enhanced training on larger datasets.
+- **Multi-modal support** for images and audio.
+- **More efficient inference** with lower latency.
+
+Stay tuned for updates! Follow us on GitHub and Hugging Face for the latest news.
+
+---
+### **Copyright & Credits**
+© 2025 Nexiloop. All Rights Reserved. Nexiloop Nova is developed and maintained by **Mohamedo Rayen** and the **Nexiloop Team**. Licensed under Apache-2.0.
 
